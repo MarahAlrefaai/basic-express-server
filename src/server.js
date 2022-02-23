@@ -17,7 +17,6 @@ app.get('/person',validator, (req,res)=>{
 
   res.status(200).json({
     name : req.name
-  
   });})
 
 app.use(errorHandler);
