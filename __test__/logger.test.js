@@ -18,7 +18,7 @@ describe('test',()=>{
 
   it('given an name in the query string, the output object is correct',async()=>{
     const response=await request.get('/person?name=marah');//the string must be the same of the post man
-    expect(response.status).toEqual('expexted object');
+    expect(typeof response.body).toEqual('object');
   })
   
 })
